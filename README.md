@@ -35,6 +35,7 @@ La police à utiliser est [Lato](https://fonts.google.com/specimen/Lato)
 
 # A rendre
 
+* le repo github de l'application et comment lancer l'application
 * Diagramme de cas d'utilisations
 * Diagramme de classes 
 * Diagramme de séquence / d'activité
