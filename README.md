@@ -18,6 +18,10 @@ Le jeu doit avoir au moins 2 écrans :
 
 La liste des déchets sera chargé extérieurement, mais pour plus de faciliter on utilisera un fichier json.
 
+# Contenu
+
+Vous trouvez les informations [ici](https://recyclage.ooreka.fr/astuce/voir/745361/tri-selectif)
+
 # Charte graphique.
 
 La couleur prédominante doit être le vert : #106900
