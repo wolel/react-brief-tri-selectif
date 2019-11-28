@@ -10,15 +10,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa71811ed5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
 
 </head>
 <body>
-<div id="Pjaune">jaune</div>
-<div id="Pbleu">bleu</div>
-<div id="Pvert">vert</div>
-<div id="Pmarron">marron</div>
+<div id="titre">Triez vos dechets!</div>
+
+<div id="dechets">
+    <div id="da" >A</div>
+    <div id="db" >B</div>
+    <div id="dc" >C</div>
+    <div id="dd" >D</div>
+    <div id="de" >E</div>
+    <div id="df">F</div>
+    <div id="dg">G</div>
+    <div id="dh">H</div>
+    <div id="di">I</div>
+    <div id="dj">J</div>
+</div>
+
+
+<div id="poubelles">
+<button class="pj" id="Pjaune" type="button"><i class="fas fa-trash-alt"></i>jaune</button>
+<button class="pb" id="Pbleu" type="button"><i class="fas fa-trash-alt"></i>bleu</button>
+<div class="pv" id="Pvert"><i class="fas fa-trash-alt"></i>vert</div>
+<div class="pm" id="Pmarron"><i class="fas fa-trash-alt"></i>marron</div>
+</div>
+
+<div class="champ">
+    <div id="score"></div>
+    <input type="text" value="Resultat" id="resultat">
+</div>
 
 <script src="script.js"></script>
 </body>

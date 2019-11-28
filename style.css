@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/*-----------titre-----------------------*/
+#titre{
+    background-color: yellow;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*-----------déchets-----------------------*/
+#dechets{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+#da, #db, #dc,#dd,#de, #df, #dg,#dh,#di,#dj{
+    padding: 0 30px 0 30px;
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+  }
+#da:hover, #db:hover, #dc:hover,#dd:hover,#de:hover, #df:hover, #dg:hover,#dh:hover,#di:hover,#dj:hover{
+    transform: scale(1.5);
+    font-weight: bold;
+
+}
+#da:active{
+    transform: scale(1.5);
+    font-weight: bold;
+}
+
+/*-----------poubelles-----------------------*/
+#poubelles{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    /*margin: 100px 0 100px 0;*/
+}
+
+.fas{
+    padding: 20px;
+    font-size: 250%;
+    display: block;
+}
+#Pjaune, #Pbleu, #Pvert, #Pmarron{
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+#Pjaune{
+    background-color: #E0D42B;
+
+}
+#Pvert{
+    background-color: #0B2E13;
+}
+#Pbleu{
+    background-color: #16193D;
+}
+#Pmarron{
+    background-color:#69471E;
+}
+
+/*-----------champ-----------------------*/
+
+.champ{
+    text-align: center;
+    height: 130px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+#resultat{
+    padding: 30px;
+    height: 50px;
+    width: 400px;
+    margin: 0 30px 0 30px;
+    border: none;
+
+}
+#score{
+    padding: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: #333;
+
+
+
+}
