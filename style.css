@@ -1,100 +1,113 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color:rgb(243, 243, 243);
+    height: auto;
 }
 
 /*-----------titre-----------------------*/
-#titre{
-    background-color: yellow;
-    font-size: 50px;
+
+
+h1{
+
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(255, 218, 20);
+}
+p{
+
+    font-size: 18px;
+    color: #333;
     text-align: center;
 }
 
 /*-----------déchets-----------------------*/
 #dechets{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
     color: white;
+    height: 100px;
 }
 
 #da, #db, #dc,#dd,#de, #df, #dg,#dh,#di,#dj{
-    padding: 0 30px 0 30px;
+    padding: 0 10px 0 10px;
     margin: 30px 0 30px 0;
     font-size: 20px;
+    color: #333;
   }
 #da:hover, #db:hover, #dc:hover,#dd:hover,#de:hover, #df:hover, #dg:hover,#dh:hover,#di:hover,#dj:hover{
     transform: scale(1.5);
     font-weight: bold;
 
 }
-#da:active{
-    transform: scale(1.5);
-    font-weight: bold;
-}
+#da:active {transform: scale(1.5);font-weight: bold;}
 
 /*-----------poubelles-----------------------*/
 #poubelles{
     display: flex;
     justify-content: center;
     cursor: pointer;
-    /*margin: 100px 0 100px 0;*/
 }
 
 .fas{
     padding: 20px;
-    font-size: 250%;
+    font-size: 350%;
     display: block;
 }
+/*
 #Pjaune, #Pbleu, #Pvert, #Pmarron{
     width: 300px;
     height: 150px;
-    margin: 20px;
+    margin: 50px 20px 80px 20px;
     text-align: center;
     color: white;
-    border: none;
-}
-
-#Pjaune{
-    background-color: #E0D42B;
 
 }
-#Pvert{
-    background-color: #0B2E13;
-}
-#Pbleu{
-    background-color: #16193D;
-}
-#Pmarron{
-    background-color:#69471E;
-}
 
+#Pjaune {background-color: #E0D42B;}
+#Pvert  {background-color: #0B2E13;}
+#Pbleu  {background-color: #16193D;}
+#Pmarron {background-color:#69471E;}
+*/
 /*-----------champ-----------------------*/
 
+.btn{
+    border: none;
+    background-color: transparent;
+}
 .champ{
     text-align: center;
-    height: 130px;
     padding: 20px;
     display: flex;
     justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
 
 }
 #resultat{
     padding: 30px;
-    height: 50px;
-    width: 400px;
+    width: 450px;
     margin: 0 30px 0 30px;
     border: none;
-
+    letter-spacing: 2px;
+    font-family: "Open Sans", serif;
 }
+
 #score{
     padding: 30px;
     width: 200px;
-    height: 50px;
     background-color: white;
     color: #333;
+    font-size: 30px;
+}
 
-
-
+#footer{
+    background-color: yellow;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 100px;
 }
