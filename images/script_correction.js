@@ -1,54 +1,63 @@
 /**
- * data: dechets, poubelles
- * poubells : 0 = jaune, ...3 = marron
- * Un tableau par groupe de dechets
- *
- *
+ * Created by simon on 02/12/2019.
  */
-var dechets_jaune =['dechets1', 'dechets2'];
-var dechets_vert = ['dechets vert1'];
-var dechets_bleu = ['dechets bleu'];
-var dechets_marron =['dechets marron'];
+/* Data : Dechets, Poubelles
+*  Poubelles : 0 = jaune, ..., 3 = marron
+*  Un tableau par groupe de dechets
+*
+*
+* */
+var dechets_jaune = ['bouteille','dechet2'];
+var dechets_vert = ['dechet vert 1'];
+var dechets_bleu = ['dechet bleu'];
+var dechets_marron = ['dechet marron'];
 
-var dechets = [] ;
-
-dechets = dechets.concat(dechets_jaune, dechets_bleu, dechets_vert, dechets_marron);
-//console.log(dechets);
+var dechets =[];
+dechets = dechets.concat(dechets_jaune,dechets_vert,dechets_bleu,dechets_marron);
 
 
-var poubelles = document.getElementsByClassName("poubelle");
+var poubelles = document.getElementsByClassName('poubelle');
 var dechet;
 
-var genererDechet = document.getElementById('genererDechets');
-
-genererDechet.onclick = function () {
+var genererDechet = document.getElementById('genererDechet');
+genererDechet.onclick = function()
+{
     var dechetIndex = Math.floor(Math.random()*dechets.length);
-
-var dechet = dechet[dechetIndex];
-dechet = dechet[dechetIndex];
-
-document.getElementById("dechetsDisplay").innerHTML = dechets_jaune + dechets_bleu + dechets_vert + dechets_marron;
-//alert(dechetsIndex)
-
+    //dechet = dechets[dechetIndex];
+    dechet = dechets_jaune[0];
+    //document.getElementById('dechetDisplay').innerHTML = dechet;
+    document.getElementById('dechetDisplay').className = "dechet "+dechet;
 };
 
-for (let i = 0 ; i < poubelles.length; i++){
-
-    poubelles[i].onclick = function () {
-
-        if(i===0){
+for(let i=0; i<poubelles.length; i++)
+{
+    poubelles[i].onclick = function()
+    {
+        if(i==0)
+        {
             var tableau = dechets_jaune;
-        }if (i===1){
-            var tableau = dechets_bleu;
-        }if (i===2){
+        }
+        if(i == 1)
+        {
             var tableau = dechets_vert;
-        }if (i===3){
+        }
+        if(i == 2)
+        {
+            var tableau = dechets_bleu;
+        }
+        if(i == 3)
+        {
             var tableau = dechets_marron;
         }
-       if (tableau.indexOf(dechets)>-1){
-           alert('bonne poubelle')
-       }else{
-           alert('mauvaise poubelle')
-       }
+
+
+        if(tableau.indexOf(dechet)>-1)
+        {
+            alert('gagné');
+        }
+        else
+        {
+            alert('mauvaise poubelle');
+        }
     }
 }
