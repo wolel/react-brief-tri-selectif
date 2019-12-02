@@ -17,54 +17,56 @@
 
 </head>
 <body>
-<div id="titre"><h1>Triez vos dechets!</h1></div>
+<!------------------HEADER------------------------->
 
+<div id="titre"><h1>Triez vos dechets!</h1></div>
 <div>
     <p><strong>Comment jouer : </strong>[Cliquer sur les dechets et choisisez la poubelle qui lui correspond.
     Votre résultat s'affichera dans"resultat".]</p>
 
 </div>
 
-
+<!------------------DECHETS------------------------->
 
 <div id="dechets">
-    <img id="da" src="images/canette_soda.png" style="width: 100px">
+    <img id="da" src="images/canette_soda.png" style="width: 80px">
     <img id="db" src="images/flacons_plastiques.png" style="width: 100px">
     <img id="dc" src="images/gel_douche.png" style="width:100px">
     <img id="dd" src="images/magazine.png" style="width: 100px">
     <img id="de" src="images/journal.png" style="width: 100px">
     <img id="df" src="images/pot_confiture.png" style="width: 100px">
     <img id="dg" src="images/papier_gras.png" style="width: 100px">
-    <img id="dh" src="images/pot_yogourt.png" style="width: 100px">
+    <img id="dh" src="images/pot_yogourt.png" style="width: 80px">
     <img id="di" src="images/couches-bébé.png" style="width: 100px">
     <img id="dj" src="images/restes.png" style="width:100px">
 
 </div>
-
+<!------------------POUBELLES------------------------->
 
 <div id="poubelles">
-<button class="btn" id="Pjaune" type= "button">
-<img src="images/poubelle_jaune.jpg" width="60%">
-</button>
+
+    <button class="btn" id="Pjaune" type= "button">
+    <img src="images/poubelle_jaune.jpg" width="60%"></button>
 
     <button class="btn" id="Pbleu" type= "button">
-    <img src="images/poubelle_bleu.jpg" width="60%">
+    <img src="images/poubelle_bleu.jpg" width="60%"></button>
 
-</button>
-<button class="btn" id="Pvert" type = "button">
-    <img src="images/poubelle_verte.jpg" width="70%">
-</button>
-<button class="btn" id="Pmarron" type = "button">
-    <img src="images/poubelle_marron.jpg" width="70%">
-</button>
+    <button class="btn" id="Pvert" type = "button">
+    <img src="images/poubelle_verte.jpg" width="70%"></button>
+
+    <button class="btn" id="Pmarron" type = "button">
+    <img src="images/poubelle_marron.jpg" width="70%"></button>
 </div>
 
+<!------------------SCORE + RESULTAT------------------------->
 <div class="champ">
     <div id="score">score</div>
     <input type="text" value="Resultat :" id="resultat">
 </div>
 
-<div id="footer"><a href="https://www.queyras-montagne.com/medias/images/info_pages/guidedutri-a6-bat-vfinale-2709.pdf"><br>Petit guide du tri en PDF</a></div>
+<!------------------FOOTER------------------------->
+
+<div id="footer"><a href="https://www.queyras-montagne.com/medias/images/info_pages/guidedutri-a6-bat-vfinale-2709.pdf" target="_blank"><br>Petit guide du tri en PDF</a></div>
 
 <script src="script.js"></script>
 </body>
