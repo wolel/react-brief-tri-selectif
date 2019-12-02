@@ -72,9 +72,15 @@ p{
 /*-----------champ-----------------------*/
 
 .btn{
-    border: none;
     background-color: transparent;
+    border-bottom-style: none;
+    outline-style: none;
 }
+.btn:hover{
+    transform: scale(0.97);
+}
+.btn:focus { outline:0 !important; }
+.btn:active { outline:0 !important; }
 .champ{
     text-align: center;
     padding: 20px;

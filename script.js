@@ -20,6 +20,7 @@ var dg = document.getElementById('dg');
 var dh = document.getElementById('dh');
 var di = document.getElementById('di');
 var dj = document.getElementById('dj');
+var btn = document.getElementById('btn');
 
 var poubelles = document.getElementById('poubelles');
 
@@ -127,12 +128,14 @@ Jaune.addEventListener('click', function () {
         count++;
         console.log(item);
 
-    if(item) {item.style.visibility='hidden';}
-
     a = false; // si pas "false", click sur la poubelle jaune genere encore et encore l'alert()
     b = false;
     c = false;
+
+     if(item) {item.style.visibility='hidden';}
+
     }
+
     else if
        ((this === Jaune && d === false) ||
         (this === Jaune && e === false) ||
@@ -144,6 +147,7 @@ Jaune.addEventListener('click', function () {
     {
         resultat.value = 'NON, ce n\'ést pas la poubelle JAUNE!';
         //alert('NON, ce n\'ést PAS la poubelle JAUNE!');
+        count--;
         resultat.style.backgroundColor = 'red';
         resultat.style.color = 'white';
         d = false;
@@ -194,6 +198,8 @@ Jaune.addEventListener('click', function () {
        resultat.value = 'NON, ce n\'ést PAS la poubelle BLEU!';
        resultat.style.backgroundColor = 'red';
        resultat.style.color = 'white';
+       count--;
+
        //alert('NON, ce n\'ést PAS la poubelle BLEU!');
     a = false;
     b = false;
@@ -239,10 +245,13 @@ Vert.addEventListener("click", function () {
         (this === Vert && i === false) ||
         (this === Vert && j === false))
     {
+
         resultat.value = 'NON, ce n\'ést pas la poubelle VERTE!';
         //alert('NON, ce n\'ést PAS la poubelle VERTE!');
         resultat.style.backgroundColor = 'red';
         resultat.style.color = 'white';
+        count--;
+
         a = false;
         b = false;
         c = false;
@@ -252,6 +261,7 @@ Vert.addEventListener("click", function () {
         i = false;
         j = false;
     }
+
     score.innerHTML = count;
     });
 
@@ -274,8 +284,10 @@ Marron.addEventListener("click", function () {
        h = false;
        i = false;
        j = false;
+
+       if(item) {item.style.visibility='hidden';}
    }
-    if(item) {item.style.visibility='hidden';}
+
 
    else if
       ((this === Marron && a === false) ||
@@ -290,6 +302,7 @@ Marron.addEventListener("click", function () {
        //alert('NON, ce n\'ést PAS la poubelle MARRON!');
        resultat.style.backgroundColor = 'red';
        resultat.style.color = 'white';
+       count--;
        a = false;
        b = false;
        c = false;
