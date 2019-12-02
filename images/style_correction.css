@@ -1,0 +1,21 @@
+.poubelle{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.jaune{
+    background-color: yellow;
+}
+.bleu{
+    background-color: blue;
+}
+.verte{
+    background-color: green;
+}
+
+.marron{
+    background-color: darkred;
+}

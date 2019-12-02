@@ -26,21 +26,24 @@ p{
 #dechets{
     /*display: flex;*/
     margin-left: 300px;
-
     cursor: pointer;
     color: white;
+}
+#da:hover, #db:hover, #dc:hover,#dd:hover,#de:hover, #df:hover, #dg:hover,#dh:hover,#di:hover,#dj:hover{
+    opacity:1;
 }
 
 #da, #db, #dc,#dd,#de, #df, #dg,#dh,#di,#dj{
    margin-left: 20px;
     color: #333;
+    opacity: .6;
   }
 #da:hover, #db:hover, #dc:hover,#dd:hover,#de:hover, #df:hover, #dg:hover,#dh:hover,#di:hover,#dj:hover{
     transform: scale(1.5);
     font-weight: bold;
 
 }
-#da:active {transform: scale(1.5);font-weight: bold;}
+#da:active {transform: scale(1.5);opacity:1}
 
 /*-----------poubelles-----------------------*/
 #poubelles{
@@ -54,6 +57,30 @@ p{
     font-size: 350%;
     display: block;
 }
+#pJ_non{
+    display: none;
+    margin-left: 135px;
+}
+#pJ_visible{
+    margin-left: 80px;
+}
+
+
+#pJ_non, #pJ_visible, .btn{
+    background-color: transparent;
+    border-bottom-style: none;
+    outline-style: none;
+}
+#pJ_non:hover, #pJ_visible:hover{
+    transform: scale(0.97);
+}
+.btn:active{
+    outline-style: none;
+    border: none;
+}
+/*.btn:focus { outline:0 !important; }
+.btn:active { outline:0 !important; }
+*/
 /*
 #Pjaune, #Pbleu, #Pvert, #Pmarron{
     width: 300px;
@@ -71,16 +98,7 @@ p{
 */
 /*-----------champ-----------------------*/
 
-.btn{
-    background-color: transparent;
-    border-bottom-style: none;
-    outline-style: none;
-}
-.btn:hover{
-    transform: scale(0.97);
-}
-.btn:focus { outline:0 !important; }
-.btn:active { outline:0 !important; }
+
 .champ{
     text-align: center;
     padding: 20px;

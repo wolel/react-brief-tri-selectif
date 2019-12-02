@@ -20,9 +20,12 @@ var dg = document.getElementById('dg');
 var dh = document.getElementById('dh');
 var di = document.getElementById('di');
 var dj = document.getElementById('dj');
+
 var btn = document.getElementById('btn');
 
 var poubelles = document.getElementById('poubelles');
+var pJ_non = document.getElementById('pJ_non');
+var pJ_visible = document.getElementById('pJ_visible');
 
 var Jaune = document.getElementById('Pjaune');
 var Bleu = document.getElementById('Pbleu');
@@ -117,7 +120,8 @@ Jaune.addEventListener('click', function () {
         (this === Jaune && b === true) ||
         (this === Jaune && c === true))
     {
-        Jaune.style.border = '2px solid white';
+        pJ_non.style.display = "none";
+        pJ_visible.style.display ='inline';
         resultat.value = 'BRAVO, c\'était la poubelle jaune!';
         //alert('BRAVO, c\'était la poubel
         // *le jaune!');
@@ -145,8 +149,13 @@ Jaune.addEventListener('click', function () {
         (this === Jaune && i === false) ||
         (this === Jaune && j === false))
     {
+        pJ_non.style.display = "block";
+        pJ_visible.style.display ='none';
+        pJ_visible.style.border = "none";
         resultat.value = 'NON, ce n\'ést pas la poubelle JAUNE!';
         //alert('NON, ce n\'ést PAS la poubelle JAUNE!');
+        score.style.backgroundColor = 'red';
+        score.style.color = 'white';
         count--;
         resultat.style.backgroundColor = 'red';
         resultat.style.color = 'white';
@@ -197,6 +206,8 @@ Jaune.addEventListener('click', function () {
 
        resultat.value = 'NON, ce n\'ést PAS la poubelle BLEU!';
        resultat.style.backgroundColor = 'red';
+       score.style.backgroundColor = 'red';
+       score.style.color = 'white';
        resultat.style.color = 'white';
        count--;
 
@@ -248,6 +259,8 @@ Vert.addEventListener("click", function () {
 
         resultat.value = 'NON, ce n\'ést pas la poubelle VERTE!';
         //alert('NON, ce n\'ést PAS la poubelle VERTE!');
+        score.style.backgroundColor = 'red';
+        score.style.color = 'white';
         resultat.style.backgroundColor = 'red';
         resultat.style.color = 'white';
         count--;
@@ -300,6 +313,8 @@ Marron.addEventListener("click", function () {
    {
        resultat.value = 'NON, ce n\'ést PAS la poubelle MARRON!';
        //alert('NON, ce n\'ést PAS la poubelle MARRON!');
+       score.style.backgroundColor = 'red';
+       score.style.color = 'white';
        resultat.style.backgroundColor = 'red';
        resultat.style.color = 'white';
        count--;
