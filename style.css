@@ -28,6 +28,9 @@ h1 p{
 #disable{
     display: none;
 }
+#disablePortait{
+    display: none;
+}
 
 /*-----------déchets-----------------------*/
 #dechets{
