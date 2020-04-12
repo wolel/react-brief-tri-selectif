@@ -7,6 +7,7 @@
 *
 *
 * */
+
 var dechets_jaune = ['bouteille','dechet2'];
 var dechets_vert = ['dechet vert 1'];
 var dechets_bleu = ['dechet bleu'];
@@ -19,8 +20,8 @@ dechets = dechets.concat(dechets_jaune,dechets_vert,dechets_bleu,dechets_marron)
 var poubelles = document.getElementsByClassName('poubelle');
 var dechet;
 
-var genererDechet = document.getElementById('genererDechet');
-genererDechet.onclick = function()
+var generer_dechet = document.getElementById('generer_dechet');
+generer_dechet.onclick = function()
 {
     var dechetIndex = Math.floor(Math.random()*dechets.length);
     //dechet = dechets[dechetIndex];

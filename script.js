@@ -57,10 +57,6 @@ var dpm = ['h','i','j'];         var dpm = [dh, di, dj];
     if (dpj){console.log(typeof dpj);// "typeof" voir de quel type est ma variable}}*/
 
 
-
-
-//----------dechets qui vont dans la:--------------
-
 //-------------------P JAUNE-----------------------
 
 da.addEventListener('click', function () {

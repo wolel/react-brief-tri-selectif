@@ -19,26 +19,29 @@
 <body>
 <!------------------HEADER------------------------->
 
-<div id="titre"><h1>Triez vos dechets!</h1></div>
-<div>
-    <p><strong>Comment jouer : </strong>[Cliquer sur les dechets et choisisez la poubelle qui lui correspond.
-    Votre résultat s'affichera dans"resultat".]</p>
+<h1>Triez vos dechets!
 
-</div>
+<p><strong>Comment jouer : <br></strong>[Cliquer sur les dechets et choisisez la poubelle qui lui correspond.
+Votre résultat s'affichera dans"resultat".]</p>
+    <p id="disable">Ne fonctionne pas sur ce téléphone</p>
+    <p id="disablePortait">Ne fonctionne que en mode landscape</p>
+
+</h1>
+
 
 <!------------------DECHETS------------------------->
 
 <div id="dechets">
-    <img id="da" src="images/canette_soda.png" style="width: 80px">
-    <img id="db" src="images/flacons_plastiques.png" style="width: 100px">
-    <img id="dc" src="images/gel_douche.png" style="width:100px">
-    <img id="dd" src="images/magazine.png" style="width: 100px">
-    <img id="de" src="images/journal.png" style="width: 100px">
-    <img id="df" src="images/pot_confiture.png" style="width: 100px">
-    <img id="dg" src="images/papier_gras.png" style="width: 100px">
-    <img id="dh" src="images/pot_yogourt.png" style="width: 80px">
-    <img id="di" src="images/couches-bébé.png" style="width: 100px">
-    <img id="dj" src="images/restes.png" style="width:100px">
+    <img class="dechet_id" id="da" src="images/canette_soda.png" style="width: 80px">
+    <img class="dechet_id" id="db" src="images/flacons_plastiques.png" style="width: 100px">
+    <img class="dechet_id" id="dc" src="images/gel_douche.png" style="width:100px">
+    <img class="dechet_id" id="dd" src="images/magazine.png" style="width: 100px">
+    <img class="dechet_id" id="de" src="images/journal.png" style="width: 100px">
+    <img class="dechet_id" id="df" src="images/pot_confiture.png" style="width: 100px">
+    <img class="dechet_id" id="dg" src="images/papier_gras.png" style="width: 100px">
+    <img class="dechet_id" id="dh" src="images/pot_yogourt.png" style="width: 80px">
+    <img class="dechet_id" id="di" src="images/couches-bébé.png" style="width: 100px">
+    <img class="dechet_id" id="dj" src="images/restes.png" style="width:100px">
 
 </div>
 <!------------------POUBELLES------------------------->
@@ -46,18 +49,21 @@
 <div id="poubelles">
 
     <button class="btn" id="Pjaune" type= "button">
-    <img  id="pJ_visible" src="images/poubelle_jaune.jpg" width="58%">
-    <img id="pJ_non" src="images/poubelle_jaune_non.jpg" width="58%">
+    <img  class="pJ_visible" src="images/poubelle_jaune.jpg"style="width: 60%">
+    <img id="pJ_non" src="images/poubelle_jaune_non.jpg">
     </button>
 
     <button class="btn" id="Pbleu" type= "button">
-    <img src="images/poubelle_bleu.jpg" width="60%"></button>
+    <img class="pJ_visible" src="images/poubelle_bleu.jpg" style="width: 60%">
+    </button>
 
     <button class="btn" id="Pvert" type = "button">
-    <img src="images/poubelle_verte.jpg" width="70%"></button>
+    <img class="pJ_visible" src="images/poubelle_verte.jpg"style="width: 68%">
+    </button>
 
     <button class="btn" id="Pmarron" type = "button">
-    <img src="images/poubelle_marron.jpg" width="70%"></button>
+    <img class="pJ_visible" src="images/poubelle_marron.jpg"style="width: 68%">
+    </button>
 </div>
 
 <!------------------SCORE + RESULTAT------------------------->
@@ -68,7 +74,9 @@
 
 <!------------------FOOTER------------------------->
 
-<div id="footer"><a href="https://www.queyras-montagne.com/medias/images/info_pages/guidedutri-a6-bat-vfinale-2709.pdf" target="_blank"><br>Petit guide du tri en PDF</a></div>
+<footer>
+    <a href="https://www.queyras-montagne.com/medias/images/info_pages/guidedutri-a6-bat-vfinale-2709.pdf" target="_blank"><br>Petit guide du tri en PDF</a>
+</footer>
 
 <script src="script.js"></script>
 </body>
